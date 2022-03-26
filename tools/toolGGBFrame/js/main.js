@@ -54,6 +54,7 @@ function main() {
     btnURL.addEventListener("change", (ev) => {
         let value = ev.target.value.split("/")[4];
         $parameters["id"] = value;
+        document.querySelector("div#id>input").value = value
         generate()
     })
 

@@ -1,9 +1,14 @@
 .container {
-    border: solid 1px;
+    border: none;
     height: 96vh;
     width: 96vw;
     margin-top: 2vh;
     margin-left: 2vw;
+    background-color: #232b2b;
+}
+
+.container>div {
+    display: flex;
 }
 
 .generate {
@@ -21,19 +26,20 @@
 }
 
 nav {
-    position: absolute;
-    left: 4vw;
-    top: 4vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     padding: 10px;
-    height: 75vh;
+    height: 100%;
+    margin-left: 0px;
 }
 
 nav div {
     width: 175px;
-    margin: 5px;
+    background-color: white;
+    margin: 0;
+    padding: 5px 10px;
+    z-index: 1;
 }
 
 nav label {
@@ -44,46 +50,40 @@ nav label {
     font-size: 14px;
 }
 
-div.options div {
-    margin-right: 2em;
+.right {
     text-align: right;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.options span {
-    width: 200px;
-}
-
-.options input {
-    width: 75px;
 }
 
 textarea {
-    margin: 0px;
+    margin-right: 0px;
     padding: 10px;
-    width: 50vw;
+    width: 100%;
     height: 9ex;
     overflow: hidden;
 }
 
-div.left-bottom {
-    position: absolute;
-    left: 4vw;
-    bottom: 4vh;
+aside {
+    background-color: #4d4d4d;
+}
+
+header {
+    background-color: #3c3c3c
+}
+
+aside,
+section {
+    padding: 10px;
+}
+
+section {
+    flex-grow: 1;
 }
 
 #preview {
     overflow: hidden;
-    display: inline-block;
-    padding: 20px;
-    margin: 0px;
-    border: none;
-    outline: blue 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: 2vh;
-    right: 4vw;
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: auto;
 }
 
 nav div {
@@ -98,19 +98,40 @@ nav div {
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
     margin: 0;
     padding: 0;
 }
 
+h1,
+label {
+    color: white;
+}
+
+h1 {
+    padding: 10px;
+}
+
 input[type="button"] {
-    margin: 2px;
-    color: dodgerblue;
-    background-color: lightblue;
-    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    background-color: #1e1e1e;
+    padding: 4px 6px;
     border: none;
 }
 
 #btnCopy:hover,
 #btnGenerate:hover {
     filter: brightness(1.1);
+}
+
+.left-bottom label {
+    font-size: small;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#btnURL {
+    width: 100%;
 }

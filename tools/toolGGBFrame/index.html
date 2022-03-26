@@ -9,19 +9,24 @@
     <title>GGB iframe</title>
 </head>
 
-<body>
-    <div class="container">
-        <section>
-            <nav></nav>
-            <div id="preview"></div>
-            <div class="left-bottom">
-                <div>
-                    <input type="text" id="btnURL">
+<body class="container">
+    <header>
+        <h1>Configuración del iframe de un recurso GGB publicado</h1>
+    </header>
+    <div>
+        <aside>
+            <div>
+                <label>URL: </label><input type="text" id="btnURL">
+                <div class="right">
                     <input type="button" id="btnGenerate" value="Generar">
-                    <input type="button" id="btnCopy" value="Copiar">
+                    <input type="button" id="btnCopy" value="Copiar">    
                 </div>
-                <textarea type="text" id="output"></textarea>
             </div>
+            <nav></nav>
+            <textarea type="text" id="output"></textarea>
+        </aside>
+        <section>
+            <div id="preview"></div>
         </section>
     </div>
 </body>
