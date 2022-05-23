@@ -1,0 +1,64 @@
+:root {
+    font-size: 12px;
+}
+
+body {
+    margin: auto 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+menu input[type="number"] {
+    width: 4em;
+    text-align: center;
+    margin-left: 0.5em;
+}
+
+menu input[type="button"] {
+    margin-left: 0.75em;
+}
+
+menu {
+    padding: 1rem;
+    background-color: midnightblue;
+    color: white;
+}
+
+menu label,
+menu span {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#view {
+    position: relative;
+}
+
+.btn-container {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    z-index: 2;
+    visibility: hidden;
+}
+
+menu label {
+    border: solid 1px gray;
+    border-radius: 3px;
+}
+
+menu {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+menu .group {
+    border-right: 1px solid gray;
+}
