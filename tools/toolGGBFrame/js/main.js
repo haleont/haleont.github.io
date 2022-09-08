@@ -3,8 +3,8 @@ window.addEventListener("load", main);
 function main() {
     let $parameters = {
             "id": "g7kcfcqg",
-            "width": 624,
-            "height": 351,
+            "width": 672,
+            "height": 378,
             "border": "ffffff",
             "rc": false,
             "ai": false,
