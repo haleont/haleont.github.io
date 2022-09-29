@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+    </script>
+    <script>
+        MathJax = {
+            loader: { load: ['[tex]/cancel', '[tex]/color'] },
+            tex: {
+                packages: { '[+]': ['cancel', 'color'] },
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div>
+        <p><label for="">Ruta recurso:</span> <input data-name="str-path" value="" type="file"/></p>
+    </div>
+    <quiz>
+
+    </quiz>
+
+    <template data-name="question">
+        <x-question>
+            <x-statement>
+            </x-statement>
+            <x-options>
+                <x-option></x-option>
+                <x-option></x-option>
+                <x-option></x-option>
+            </x-options>
+        </x-question>
+    </template>
+</body>
+
+</html>
