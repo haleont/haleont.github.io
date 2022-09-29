@@ -15,7 +15,7 @@ function main() {
     }
 
     function onReaderLoad(e) {
-        quiz,innerHTML = "";
+        quiz.innerHTML = "";
         eval(e.target.result);
         Quiz.perguntas.forEach(item => {
             let question = tmpQuestion.cloneNode(true);
@@ -25,8 +25,8 @@ function main() {
             question.querySelector("x-option:nth-child(3)").innerHTML = item.respostas[2];
             question.querySelector(`x-option:nth-child(${item.correta})`).classList.add('correct');
             quiz.appendChild(question);
-            MathJax.typeset();
         });
+        MathJax.typeset();
     }
 
 }
