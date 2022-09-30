@@ -30,6 +30,6 @@ x-option {
     padding: 6px 12px;
     cursor: pointer;
 }
-input[type=file]{
+#in-path{
     display: none;
 }
